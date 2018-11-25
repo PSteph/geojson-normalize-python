@@ -43,12 +43,10 @@ def normalize(gj):
 
 # test
 if __name__ == "__main__":
-    
-    print (str(sys.argv[1]))
-    data = ""
-    for line in open(str(sys.argv[1])):
-        print (line)
-    print (normalize( open(ast.literal_eval(str(sys.argv[1]))) ))
-    # gj = {"type": "Point","coordinates": [125.6, 10.1]}
-    # normalize = Normalize(gj)
-    # print (normalize(gj))
+    gj = {"type": "Point","coordinates": [125.6, 10.1]}
+    print (normalize(gj))
+#     print (str(sys.argv[1]))
+#     data = ""
+#     for line in open(str(sys.argv[1])):
+#         print (line)
+#     print (normalize( open(ast.literal_eval(str(sys.argv[1]))) ))
